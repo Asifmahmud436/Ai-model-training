@@ -9,7 +9,7 @@ A deep learning project that analyzes movie reviews to determine sentiment (posi
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 movie-sentiment-analysis
 ├── .gitignore              # Git ignore file
 ├── confusion_matrix_dl.png # Model performance visualization
@@ -19,27 +19,28 @@ movie-sentiment-analysis
 ├── sentiment_model.h5      # Trained model file
 ├── test_data.csv          # Test dataset
 └── tokenizer.pkl          # Trained tokenizer for text preprocessing
-\`\`\`
+```
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-\`\`\`bash
+```bash
 pip install tensorflow numpy pandas matplotlib scikit-learn
-\`\`\`
-
+```
 ### Running the Project
 
 1. **Train the model** (if needed):
-   \`\`\`bash
-   python main.py
-   \`\`\`
+
+```bash
+python main.py
+```
 
 2. **Run interactive demo**:
-   \`\`\`bash
-   python demo.py
-   \`\`\`
+
+```bash
+python demo.py
+```
 
 3. **View model performance**:
    - Check `confusion_matrix_dl.png` for visual performance metrics
