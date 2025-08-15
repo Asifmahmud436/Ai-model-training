@@ -10,7 +10,7 @@ A deep learning project that analyzes movie reviews to determine sentiment (posi
 ## 📁 Project Structure
 
 \`\`\`
-movie-sentiment-analysis/
+movie-sentiment-analysis
 ├── .gitignore              # Git ignore file
 ├── confusion_matrix_dl.png # Model performance visualization
 ├── demo.py                 # Interactive demo script
