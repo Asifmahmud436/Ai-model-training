@@ -87,9 +87,9 @@ The model uses a sequential architecture optimized for text classification:
 ```python
 # Typical architecture (see main.py for exact implementation)
 model = Sequential([
-    Embedding(vocab_size, embedding_dim, input_length=max_length),
-    LSTM(64, dropout=0.5, recurrent_dropout=0.5),
-    Dense(32, activation='relu'),
+    Embedding(input_dim=VOCAB_SIZE, output_dim=EMBEDDING_DIM, input_length=MAX_LENGTH),
+    GlobalAveragePooling1D(),
+    Dense(24, activation='relu'),
     Dropout(0.5),
     Dense(1, activation='sigmoid')
 ])
