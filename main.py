@@ -36,14 +36,13 @@ EMBEDDING_DIM = 128
 print("1. Loading and preparing data...")
 try:
     df = pd.read_csv("test_data.csv")
-    # Rename columns if necessary
+    # Renaming columns 
     if df.shape[1] == 2:
         df.columns = ['review', 'sentiment']
 except FileNotFoundError:
     print("Error: 'test_data.csv' not found.")
     exit()
 
-# Check sentiment column type and map if necessary
 if df['sentiment'].dtype == object:
     df['sentiment'] = df['sentiment'].map({'positive': 1, 'negative': 0})
 
